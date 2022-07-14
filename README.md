@@ -1,5 +1,6 @@
 # OLMAX
 Business site created for company named OLMAX.
+
 On the site we can find: 
 * Basic informations about company and their products/services
 * Latest company news/activities
@@ -23,11 +24,11 @@ $ cd ./olmax
 $ npm install
 $ npm start
 ```
-###### .env.development
+##### .env.development
 ```
-$ GATSBY_CONTACT_ENDPOINT=fill this field with formspree api link
+GATSBY_CONTACT_ENDPOINT=fill this field with formspree api link
 ```
-###### .env.production
+##### .env.production
 ```
-$ GATSBY_CONTACT_ENDPOINT=fill this field with formspree api link
+GATSBY_CONTACT_ENDPOINT=fill this field with formspree api link
 ```
