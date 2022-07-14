@@ -26,9 +26,9 @@ $ npm start
 ```
 ##### .env.development
 ```
-$ GATSBY_CONTACT_ENDPOINT=fill this field with formspree api link
+GATSBY_CONTACT_ENDPOINT=fill this field with formspree api link
 ```
 ##### .env.production
 ```
-$ GATSBY_CONTACT_ENDPOINT=fill this field with formspree api link
+GATSBY_CONTACT_ENDPOINT=fill this field with formspree api link
 ```
