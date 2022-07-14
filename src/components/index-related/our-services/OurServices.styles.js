@@ -6,12 +6,13 @@ export const OurServicesContainer = styled.section`
     background:var(--color-white);
     & > ul{
         display:grid;
-        gap:2rem;
+        gap:3rem;
         max-width:1500px;
         margin-inline:auto;
     }
     @media(min-width:730px){
         & > ul{
+            gap:2rem;
             grid-template-columns:repeat(3,1fr);
         }
     }
@@ -35,7 +36,7 @@ export const OurServicesListItem = styled.li`
         font-size:var(--fs-big);
         ${TextUnderline}
         &::before{
-            width:2.7rem;
+            width:2.5rem;
             left:50%;
             transform:translateX(-50%);
         }

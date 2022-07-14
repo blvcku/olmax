@@ -4,8 +4,9 @@ import { TextUnderline } from '../../../styles/Mixins';
 export const QuestionsContainer = styled.section`
     padding:3rem 1rem;
     background:var(--color-white);
-    h2{
-        font-size:var(--fs-large);
+    & > h2{
+        font-size:var(--fs-xlarge);
+        font-weight:700;
         text-align:center;
         max-width:25ch;
         margin-inline:auto;
@@ -14,6 +15,14 @@ export const QuestionsContainer = styled.section`
             left:50%;
             transform:translateX(-50%);
         }
+    }
+    & > p{
+        font-size:var(--fs-medium);
+        color:var(--color-grey-dark);
+        margin-top:.9rem;
+        text-align:center;
+        max-width:50ch;
+        margin-inline:auto;
     }
     @media(min-width:1000px){
         padding:6rem 1rem;
