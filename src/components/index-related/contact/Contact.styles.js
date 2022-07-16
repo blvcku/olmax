@@ -10,7 +10,6 @@ export const ContactContainer = styled.section`
         margin-bottom:1.5rem;
         h2{
             font-size:var(--fs-large);
-            color:var(--color-black);
             font-weight:700;
             text-align:center;
             ${TextUnderline}

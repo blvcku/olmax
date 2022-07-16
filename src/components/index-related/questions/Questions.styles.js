@@ -18,20 +18,19 @@ export const QuestionsContainer = styled.section`
     }
     & > p{
         font-size:var(--fs-medium);
-        color:var(--color-grey-dark);
         margin-top:.9rem;
         text-align:center;
         max-width:50ch;
         margin-inline:auto;
     }
     @media(min-width:1000px){
-        padding:6rem 1rem;
+        padding:8rem 1rem;
     }
 `;
 
 export const QuestionsList = styled.ul`
     margin-inline:auto;
-    margin-top:3rem;
+    margin-top:4rem;
     max-width:500px;
     display:grid;
     gap:2rem;
@@ -40,8 +39,8 @@ export const QuestionsList = styled.ul`
         padding-bottom:1.8rem;
     }
     details{
-        --line-width:.87rem;
-        --line-thickness:.11rem;
+        --line-width:.9rem;
+        --line-thickness:.125rem;
         --gap:.9rem;
         --left-spacing: calc(var(--gap) + var(--line-width));
         font-size:var(--fs-medium);
@@ -75,8 +74,8 @@ export const QuestionsList = styled.ul`
             margin-top:.5rem;
             margin-left:var(--left-spacing);
             font-size:var(--fs-small);
-            color:var(--color-grey-dark);
             line-height:1.33;
+            color:var(--color-grey-dark);
         }
         &[open]{
             color:var(--color-black);

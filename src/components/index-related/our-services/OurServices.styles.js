@@ -42,7 +42,7 @@ export const OurServicesListItem = styled.li`
         }
     }
     p{
-        margin-top:.8rem;
+        margin-top:.7rem;
         font-size:var(--fs-small);
         max-width:40ch;
         line-height:1.33;

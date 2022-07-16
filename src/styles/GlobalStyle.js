@@ -3,8 +3,8 @@ import { createGlobalStyle } from 'styled-components';
 const GlobalStyle = createGlobalStyle`
     :root{
 
-        --color-white: #F4F4F4;
-        --color-white-dark: #EDEDED;
+        --color-white: #ffffff;
+        --color-white-dark: #f7f7f7;
         --color-red: #D64B22;
         --color-black: #222222;
         --color-black-light: #1c1c1c;
@@ -17,11 +17,15 @@ const GlobalStyle = createGlobalStyle`
         --fs-medium:1.2rem;
         --fs-big:1.6rem;
         --fs-large:2.2rem;
-        --fs-xlarge:3.1rem;
+        --fs-xlarge:2.6rem;
 
         font-family: 'Red Hat Display', sans-serif;
         font-size:100%;
-        color:var(--color-black);
+        color:var(--color-grey-dark);
+
+        @media(min-width:400px){
+            --fs-xlarge:3rem;
+        }
     }
 
     *, *::before, *::after{
@@ -35,6 +39,11 @@ const GlobalStyle = createGlobalStyle`
 
     body{
         background:var(--color-white-dark);
+    }
+
+    h1,h2,h3,h4,h5,h6{
+        font-weight:700;
+        color:var(--color-black);
     }
 
     ul, ol{
