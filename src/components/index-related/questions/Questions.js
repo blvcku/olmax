@@ -4,7 +4,7 @@ import { QuestionsContainer, QuestionsList } from "./Questions.styles";
 const Questions = () => {
     return(
         <QuestionsContainer>
-            <h2>Pytania klientów</h2>
+            <h2>FAQ</h2>
             <p>Przed skontaktowaniem się z nami zapoznaj się z najczęściej zadawanymi pytaniami przez naszych klientów.</p>
             <QuestionsList>
                 <li>

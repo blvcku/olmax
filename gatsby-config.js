@@ -1,3 +1,7 @@
+require("dotenv").config({
+  path: `.env.${process.env.NODE_ENV}`,
+});
+
 module.exports = {
   siteMetadata: {
     title: `OLMAX - Roboty ziemne i wyburzenia`,
@@ -18,8 +22,8 @@ module.exports = {
     {
       resolve: 'gatsby-source-contentful',
       options: {
-        "accessToken": "5IAyirAmZkF5JfQ4r1oR22DP2cxdQvfgta2l5B69rao",
-        "spaceId": "xm3avoai5k6a"
+        "accessToken": process.env.GATSBY_CONTENTFUL_API_KEY,
+        "spaceId": process.env.GATSBY_CONTENTFUL_SPACE_ID
       }
     }, 
   ]

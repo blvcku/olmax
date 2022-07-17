@@ -92,7 +92,7 @@ const Contact = () => {
     return(
         <ContactContainer>
             <div>
-                <h2>Potrzebujesz pomocy?</h2>
+                <h2>Skontaktuj się!</h2>
                 <p>Jeżeli chcesz skorzystać z naszych usług bądź dowiedzieć się więcej na ich temat, skontaktuj się z nami!</p>
                 <p>Wykorzystaj formularz by podać nam jak najwięcej informacji, a my odezwiemy się do Ciebie mailowo lub telefonicznie.</p>
                 <address>

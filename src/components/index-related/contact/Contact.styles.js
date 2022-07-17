@@ -9,7 +9,7 @@ export const ContactContainer = styled.section`
     & > div{
         margin-bottom:1.5rem;
         h2{
-            font-size:var(--fs-large);
+            font-size:var(--fs-xlarge);
             font-weight:700;
             text-align:center;
             ${TextUnderline}

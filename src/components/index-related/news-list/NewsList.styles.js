@@ -42,7 +42,7 @@ export const NewsContainer = styled.ul`
     display:grid;
     grid-auto-flow:column;
     grid-auto-columns:calc(100% / var(--visible-columns));
-    overflow-x:scroll;
+    overflow-x:auto;
     @media(min-width:630px){
         --visible-columns:2;
         overflow:hidden;
