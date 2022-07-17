@@ -2,13 +2,14 @@
 Business site created for company named OLMAX.
 
 On the site we can find: 
-* Basic informations about company and their products/services
-* Latest company news/activities
+* Basic informations about company and their services
+* Latest company news
 * Contact form
 
 ## Table of contents
 * [Technologies](#technologies)
 * [Features](#features)
+* [Data models](#data-models)
 * [Setup](#setup)
 
 ## Technologies
@@ -21,15 +22,15 @@ Project is created with:
 
 ## Features
 * Homepage
-  * Basic informations about company and their products/services
+  * Basic informations about company and their services
   * Contact form connected to formspree, which sends emails with form data to company owner
-  * List of news/activities using data from contentful(in progress)
+  * List of news using data from contentful(in progress)
   * Scroll animations using gsap(in progress)
-* Automatically generated news/activities pages using data from contentful(in progress)
+* Automatically generated news pages using data from contentful(in progress)
 * Privacy Policy page(in progress)
 
 ## Data models
-Contentful news/activity data model:
+News article:
 * Title - short text
 * Slug - short text
 * Description - short text
