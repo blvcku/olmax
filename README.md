@@ -27,7 +27,7 @@ Project is created with:
   * List of news using data from contentful(in progress)
   * Scroll animations using gsap(in progress)
 * Automatically generated news pages using data from contentful(in progress)
-* Privacy Policy page(in progress)
+* Privacy policy page(in progress)
 
 ## Data models
 News article:
