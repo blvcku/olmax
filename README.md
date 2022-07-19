@@ -24,7 +24,7 @@ Project is created with:
 * Homepage
   * Basic informations about company and their services
   * Contact form connected to formspree, which sends emails with form data to company owner
-  * List of news using data from contentful(in progress)
+  * List of news using data from contentful with pagination(in progress)
   * Scroll animations using gsap(in progress)
 * Automatically generated news pages using data from contentful(in progress)
 * Privacy policy page(in progress)
