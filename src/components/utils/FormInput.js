@@ -24,7 +24,7 @@ const Input = styled.input`
     font-size:var(--fs-small);
     display:block;
     width:100%;
-    box-shadow: 0px 3px 6px #00000066;
+    box-shadow: 0px 2px 4px #00000066;
     border:none;
     background:var(--color-white);
     outline:none;

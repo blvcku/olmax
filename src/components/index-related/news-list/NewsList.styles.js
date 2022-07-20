@@ -24,44 +24,59 @@ export const NewsListContainer = styled.section`
     }
     & > div{
         position:relative;
-        max-width:1420px;
+        max-width:1470px;
         margin-inline:auto;
+        @media(hover: hover) and (pointer:fine){
+            &:hover{
+                & > button{
+                    opacity:1;
+                }
+            }
+        }
     }
-    @media(min-width:630px){
-        div{
-            padding-inline:1rem;
+    @media(min-width:650px){
+        & > div{
+            padding-inline:2.2rem;
+            & > div{
+                overflow:hidden;
+            }
         }
     }
 `;
 
 export const NewsContainer = styled.ul`
-    --gap: 3rem;
+    --gap: 2.6rem;
     --visible-columns:1;
+    transition:transform .3s cubic-bezier(0.65,0.05,0.36,1);;
     margin-top:3rem; ${/* +1rem from padding top */''}
     padding:1rem 0; ${/* padding to make sure that box shadow is visible on list items */''}
     display:grid;
     grid-auto-flow:column;
-    grid-auto-columns:calc(100% / var(--visible-columns));
     overflow-x:auto;
-    @media(min-width:630px){
+    grid-auto-columns:calc(100% / var(--visible-columns));
+    @media(min-width:650px){
         --visible-columns:2;
-        overflow:hidden;
+        overflow:visible;
+        transform:translateX(${({currentNews}) => `calc(${currentNews} / var(--visible-columns) * 100% * -1)`});
     }
     @media(min-width:950px){
         --visible-columns:3;
     }
 `;
 
-export const NewsListItem = styled.li`
-    box-shadow: 0px 3px 6px #00000066;
+export const NewsListItemContainer = styled.li`
+box-shadow: 0px 2px 4px #00000066;
     margin-inline:calc(var(--gap) / 2);
     background:var(--color-white);
     height:max-content;
     & > a{
         overflow:hidden;
         display:block;
+        div{
+            transition:transform .6s ease;
+        }
         &:hover{
-            img{
+            div{
                 transform:scale(1.06);
             }
         }
@@ -69,11 +84,10 @@ export const NewsListItem = styled.li`
     img{
         display:block;
         width:100%;
-        aspect-ratio:16/10.5;
+        aspect-ratio:16/10.6;
         object-fit:cover;
-        transition:transform .6s ease;
     }
-    div{
+    & > div{
         padding:1.5rem 1.4rem;
     }
     h3{
@@ -98,6 +112,7 @@ export const NewsListItem = styled.li`
     p:nth-of-type(1){
         color:var(--color-orange);
         font-weight:500;
+        text-transform:uppercase;
     }
     p:nth-of-type(2){
         margin-top:.55rem;
@@ -106,20 +121,23 @@ export const NewsListItem = styled.li`
 
 export const NextButton = styled.button`
     position:absolute;
-    top:50%;
-    transform:translateY(-50%);
+    top:40%;
     right:0;
     display:none;
     width:max-content;
     background:none;
     border:none;
+    transition:opacity .4s ease;
     img{
         display:block;
         width:2.2rem;
         height:auto;
     }
-    @media(min-width:630px){
+    @media(min-width:650px){
         display:block;
+    }
+    @media(hover: hover) and (pointer:fine){
+        opacity:0;
     }
 `;
 

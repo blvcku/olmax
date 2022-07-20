@@ -1,4 +1,5 @@
 import React, { useLayoutEffect, useRef } from "react";
+import { graphql } from "gatsby";
 import { gsap } from 'gsap';
 import { ScrollTrigger } from "gsap/all";
 import CustomHelmet from "../components/CustomHelmet";
@@ -10,8 +11,11 @@ import Questions from "../components/index-related/questions/Questions";
 import Contact from "../components/index-related/contact/Contact";
 import Footer from "../components/footer/Footer";
 
-const Index = () => {
+const Index = ({data}) => {
 
+	const { allContentfulNews: { newsList } } = data;
+
+	//gsap stuff
 	const headerRef = useRef();
 	const aboutRef = useRef();
 
@@ -25,6 +29,8 @@ const Index = () => {
 	// 	})
 	// }, []);
 
+
+
   	return(
 		<>
 		<CustomHelmet />
@@ -32,7 +38,7 @@ const Index = () => {
 			<main>
 				<About innerRef={aboutRef}/>
 				<OurServices />
-				<NewsList />
+				<NewsList newsList={newsList} />
 				<Questions />
 				<Contact />
 			</main>
@@ -42,3 +48,23 @@ const Index = () => {
 }
 
 export default Index;
+
+export const query = graphql`
+	query NewsList {
+		allContentfulNews:allContentfulAktualnosci(sort: {fields: createdAt, order: DESC}, limit: 20) {
+			newsList:nodes {
+				createdAt
+				slug
+				title
+				description
+				thumb {
+					gatsbyImageData(
+						placeholder: BLURRED
+						width:600
+					)
+					description
+				}
+			}
+		}
+	}
+`;
