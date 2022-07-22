@@ -1,5 +1,7 @@
 import React, { useState, useEffect } from "react";
-import FirstSlide from '../../../../images/first-slide.jpg';
+import EarthworkImage from '../../../../images/roboty-ziemne.jpg';
+import MachineRentalImage from '../../../../images/wynajem-maszyn.jpg';
+import DemolitionImage from '../../../../images/wyburzenia.jpg';
 import { CarouselContainer, CarouselSlide, CarouselIndicatorsContainer, CarouselIndicator } from './Carousel.styles';
 
 const Carousel = () => {
@@ -30,23 +32,23 @@ const Carousel = () => {
     return(
         <>
             <CarouselContainer currentSlide={currentSlide}>
-                <CarouselSlide active={currentSlide === 0} background={FirstSlide}>
+                <CarouselSlide active={currentSlide === 0} background={EarthworkImage}>
                     <div>
                         <h2>Roboty ziemne</h2>
                         <span></span>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aliquid repellendus iure ea. Fugit aspernatur consequuntur assumenda perspiciatis saepe eveniet quia alias modi tenetur optio molestias a dolorum, quibusdam debitis, libero omnis illo. Deserunt voluptatibus dolorum corporis pariatur nemo eius?</p>
                     </div>
                 </CarouselSlide>
-                <CarouselSlide active={currentSlide === 1} background={FirstSlide}>
+                <CarouselSlide active={currentSlide === 1} background={DemolitionImage}>
                     <div>
-                        <h2>Roboty ziemne</h2>
+                        <h2>Wyburzenia</h2>
                         <span></span>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aliquid repellendus iure ea. Fugit aspernatur consequuntur assumenda perspiciatis saepe eveniet quia alias modi tenetur optio molestias a dolorum, quibusdam debitis, libero omnis illo. Deserunt voluptatibus dolorum corporis pariatur nemo eius?</p>
                     </div>
                 </CarouselSlide>
-                <CarouselSlide active={currentSlide === 2} background={FirstSlide}>
+                <CarouselSlide active={currentSlide === 2} background={MachineRentalImage}>
                     <div>
-                        <h2>Roboty ziemne</h2>
+                        <h2>Wynajem maszyn</h2>
                         <span></span>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aliquid repellendus iure ea. Fugit aspernatur consequuntur assumenda perspiciatis saepe eveniet quia alias modi tenetur optio molestias a dolorum, quibusdam debitis, libero omnis illo. Deserunt voluptatibus dolorum corporis pariatur nemo eius?</p>
                     </div>

@@ -24,7 +24,7 @@ const NewsList = ({newsList}) => {
     }
 
     return(
-        <NewsListContainer>
+        <NewsListContainer id='aktualnosci'>
             <h2>Aktualności</h2>
             <p>Zobacz najnowsze działania naszej firmy!</p>
             <div>

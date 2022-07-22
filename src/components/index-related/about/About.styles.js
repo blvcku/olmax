@@ -41,10 +41,9 @@ export const Wrapper = styled.div`
         display:none;
         background:var(--color-grey-light);
     }
-    img{
-        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    & > div:nth-child(3){
         display:none;
-        width:100%;
+        box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
     @media(min-width:290px){
         a{
@@ -76,15 +75,15 @@ export const Wrapper = styled.div`
         span{
             display:block;
         }
-        div:nth-child(1){
+        & > div:nth-child(1){
             margin-bottom:3rem;
         }
-        img{
+        & > div:nth-child(3){
             display:block;
         }
     }
     @media(min-width:1250px){
-        div:nth-child(3){
+        & > div:nth-child(3){
             margin-left:3rem;
         }
     }

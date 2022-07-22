@@ -1,5 +1,5 @@
 import React from "react";
-import Image from '../../../images/o-nas.png';
+import { StaticImage } from "gatsby-plugin-image";
 import Button from "../../utils/Button";
 import { AboutContainer, Wrapper } from "./About.styles";
 
@@ -15,7 +15,7 @@ const About = ({innerRef}) => {
                 </div>
                 <span></span>
                 <div>
-                    <img src={Image} alt='O nas' />
+                    <StaticImage layout='fullWidth' placeholder="blurred" src='../../../images/o-nas.png' alt='O nas' />
                 </div>
             </Wrapper>
         </AboutContainer>
