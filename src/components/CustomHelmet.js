@@ -18,7 +18,7 @@ const CustomHelmet = (props) => {
 
     return(
         <Helmet>
-            <title>OLMAX</title>
+            <title>{customTitle || title}</title>
             <meta name='description' content={customDescription || description} />
             <meta name='keywords' content={customKeywords || keywords} />
             <meta charset='UTF-8' />

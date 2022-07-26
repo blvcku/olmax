@@ -8,14 +8,8 @@ const Contact = () => {
 
     const { email, phoneNum } = useSiteMetadata();
     const [loading, setLoading] = useState(false);
-    const [success, setSuccess] = useState(false); 
-    const [values, setValues] = useState({
-        imie: '',
-        numer: '',
-        tytul: '',
-        email: '',
-        wiadomosc: ''
-    });
+    const [success, setSuccess] = useState(false);
+    const [showErrors, setShowErrors] = useState(false); 
 
     const inputs = [
         {
@@ -66,10 +60,6 @@ const Contact = () => {
         }
     ];
 
-    const handleInputChange = e => {
-        setValues(prev => ({...prev, [e.target.name]: e.target.value}));
-    }
-
     const handleSubmit = async e => {
         e.preventDefault();
         if(loading || success) return;
@@ -89,8 +79,12 @@ const Contact = () => {
         setLoading(false);
     }
 
+    const handleButtonClick = e => {
+        setShowErrors(true);
+    }
+
     return(
-        <ContactContainer>
+        <ContactContainer id='kontakt'>
             <div>
                 <h2>Skontaktuj się!</h2>
                 <p>Jeżeli chcesz skorzystać z naszych usług bądź dowiedzieć się więcej na ich temat, skontaktuj się z nami!</p>
@@ -104,10 +98,10 @@ const Contact = () => {
                 {inputs.map(input => {
                     const { name } = input;
                     return(
-                        <FormInput key={name} value={values[name]} onChange={handleInputChange} {...input} />
+                        <FormInput showError={showErrors} key={name} {...input} />
                     )
                 })}
-                <SubmitButton disabled={loading} type='submit'>
+                <SubmitButton onClick={handleButtonClick} disabled={loading} type='submit'>
                     {success ? 'Dziękujemy za wiadomość!' : (
                         <>
                             Wyślij wiadomość

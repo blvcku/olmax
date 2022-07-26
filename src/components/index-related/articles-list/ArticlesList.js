@@ -1,30 +1,30 @@
 import React, { useState } from "react";
 import ArrowIcon from '../../../images/arrow.svg';
-import NewsListItem from "./NewsListItem";
-import { NewsListContainer, NewsContainer, NextButton, PrevButton } from "./NewsList.styles";
+import Article from "./Article";
+import { ArticlesListContainer, ArticlesListWrapper, NextButton, PrevButton } from "./ArticlesList.styles";
 import useWindowDimensions from '../../../hooks/useWindowDimensions';
 
-const NewsList = ({newsList}) => {
+const ArticlesList = ({articlesList}) => {
 
-    const [currentNews, setCurrentNews] = useState(0);
+    const [currentVisibleArticle, setCurrentVisibleArticle] = useState(0);
     const { width } = useWindowDimensions();
 
     const increaseCurrentNews = e => {
         e.preventDefault();
         // additional -1 / -2 because slider moves 1 item ahead and last item is visible when 2nd/3rd latest item is visible too
-        if(currentNews === newsList.length - (width <= 950 ? 2 : 3)) return setCurrentNews(0);
-        setCurrentNews(prev => prev + 1);
+        if(currentVisibleArticle === articlesList.length - (width <= 950 ? 2 : 3)) return setCurrentVisibleArticle(0);
+        setCurrentVisibleArticle(prev => prev + 1);
     }
 
     const decreaseCurrentNews = e => {
         e.preventDefault();
         // additional -1 / -2 because slider moves 1 item ahead and last item is visible when 2nd/3rd latest item is visible too
-        if(!currentNews) return setCurrentNews(newsList.length - (width <= 950 ? 2 : 3));  
-        setCurrentNews(prev => prev - 1);
+        if(!currentVisibleArticle) return setCurrentVisibleArticle(articlesList.length - (width <= 950 ? 2 : 3));  
+        setCurrentVisibleArticle(prev => prev - 1);
     }
 
     return(
-        <NewsListContainer id='aktualnosci'>
+        <ArticlesListContainer id='aktualnosci'>
             <h2>Aktualności</h2>
             <p>Zobacz najnowsze działania naszej firmy!</p>
             <div>
@@ -35,16 +35,15 @@ const NewsList = ({newsList}) => {
                     <img src={ArrowIcon} alt='Poprzednia aktualność' />
                 </PrevButton>
                 <div>
-                    <NewsContainer currentNews={currentNews}>
-                        {newsList.map(data => (
-                            <NewsListItem {...data} />
+                    <ArticlesListWrapper currentVisibleArticle={currentVisibleArticle} >
+                        {articlesList.map(data => (
+                            <Article {...data} />
                         ))}
-                    </NewsContainer>
+                    </ArticlesListWrapper>
                 </div>
-
             </div>
-        </NewsListContainer>
+        </ArticlesListContainer>
     )
 }
 
-export default NewsList;
+export default ArticlesList;

@@ -1,7 +1,7 @@
 import styled from "styled-components";
 import { TextUnderline } from '../../../styles/Mixins';
 
-export const NewsListContainer = styled.section`
+export const ArticlesListContainer = styled.section`
     padding:8rem 0 7rem; ${/* -1rem on bottom because of bottom padding on NewsContainer */''}
     & > h2{
         font-size:var(--fs-xlarge);
@@ -24,7 +24,7 @@ export const NewsListContainer = styled.section`
     }
     & > div{
         position:relative;
-        max-width:1470px;
+        max-width:1500px;
         margin-inline:auto;
         @media(hover: hover) and (pointer:fine){
             &:hover{
@@ -44,7 +44,7 @@ export const NewsListContainer = styled.section`
     }
 `;
 
-export const NewsContainer = styled.ul`
+export const ArticlesListWrapper = styled.ul`
     --gap: 2.6rem;
     --visible-columns:1;
     transition:transform .3s cubic-bezier(0.65,0.05,0.36,1);;
@@ -57,14 +57,14 @@ export const NewsContainer = styled.ul`
     @media(min-width:650px){
         --visible-columns:2;
         overflow:visible;
-        transform:translateX(${({currentNews}) => `calc(${currentNews} / var(--visible-columns) * 100% * -1)`});
+        transform:translateX(${({currentVisibleArticle}) => `calc(${currentVisibleArticle} / var(--visible-columns) * 100% * -1)`});
     }
     @media(min-width:950px){
         --visible-columns:3;
     }
 `;
 
-export const NewsListItemContainer = styled.li`
+export const ArticleContainer = styled.li`
 box-shadow: 0px 2px 4px #00000066;
     margin-inline:calc(var(--gap) / 2);
     background:var(--color-white);

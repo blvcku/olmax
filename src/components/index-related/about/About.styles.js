@@ -8,7 +8,7 @@ export const AboutContainer = styled.section`
     padding-inline:1rem;
 `;
 
-export const Wrapper = styled.div`
+export const AboutWrapper = styled.div`
     max-width:1300px;
     margin-inline:auto;
     margin-top:3rem;

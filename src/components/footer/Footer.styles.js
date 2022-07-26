@@ -22,21 +22,21 @@ export const FooterContainer = styled.footer`
         order:3;
         text-align:center;
     }
-    div{
+    & > div{
         justify-content:center;
         display:flex;
         flex:1;
         align-items:center;
     }
-    div:nth-child(2){
+    & > div:nth-child(2){
         flex-direction:column;
         gap:.5rem;
     }
-    div:nth-child(3){
+    & > div:nth-child(3){
         gap:.8rem;
     }
     @media(min-width:360px){
-        div:nth-child(2){
+        & > div:nth-child(2){
             flex-direction:row;
             gap:1rem;
         }
@@ -59,7 +59,7 @@ export const FooterContainer = styled.footer`
             align-items:center;
             margin-right:auto;
         }
-        div:nth-child(3){
+        & > div:nth-child(3){
             margin-left:auto;
         }
     }

@@ -1,5 +1,6 @@
 import React from "react";
 import { Link } from "gatsby";
+import { AnchorLink } from "gatsby-plugin-anchor-links";
 import useSiteMetadata from '../../hooks/useSiteMetadata';
 import { FooterContainer } from "./Footer.styles";
 
@@ -12,7 +13,7 @@ const Footer = () => {
             <p>&copy; Copyright OLMAX {copyright}</p>
             <div>
                 <Link to='/polityka'>Polityka prywatności</Link>
-                <Link to='/aktualnosci'>Aktualności</Link>
+                <AnchorLink to='/#aktualnosci'>Aktualności</AnchorLink>
             </div>
             <div>
                 <a aria-label='Nasz facebook' rel='noopener noreferrer' target='_blank' href={facebookURL}>

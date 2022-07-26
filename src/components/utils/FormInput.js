@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import styled from 'styled-components';
 
 const Label = styled.label`
@@ -32,7 +32,7 @@ const Input = styled.input`
     padding:.6rem .8rem;
     margin-top:.3rem;
     outline-offset:-1px;
-    ${({focusedOnce}) => focusedOnce && `
+    ${({showError}) => showError && `
         &:invalid{
             outline:1px solid var(--color-red);
             & ~ p{
@@ -44,17 +44,12 @@ const Input = styled.input`
 
 const FormInput = (props) => {
 
-    const [focusedOnce, setFocusedOnce] = useState(false);
-    const { label, errorMessage, ...inputProps } = props;
-
-    const handleFocusedOnce = e => {
-        setFocusedOnce(true);
-    }
+    const { showError, label, errorMessage, ...inputProps } = props;
     
     return(
         <Label>
             {label}
-            <Input {...inputProps} focusedOnce={focusedOnce} onBlur={handleFocusedOnce} />
+            <Input {...inputProps} showError={showError} />
             <p role='alert'>{errorMessage}</p>
         </Label>
     )

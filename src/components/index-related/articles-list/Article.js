@@ -1,14 +1,14 @@
 import React from 'react';
 import { Link } from 'gatsby';
 import { GatsbyImage, getImage } from "gatsby-plugin-image";
-import { NewsListItemContainer } from './NewsList.styles';
+import { ArticleContainer } from './ArticlesList.styles';
 
-const NewsListItem = ({slug, title, description, createdAt, thumb}) => {
+const Article = ({slug, title, description, createdAt, thumb}) => {
 
     const image = getImage(thumb);
 
     return(
-        <NewsListItemContainer key={slug}>
+        <ArticleContainer key={slug}>
             <Link to={`/aktualnosci/${slug}`}>
                 <GatsbyImage image={image} alt={thumb.description} />
             </Link>
@@ -17,8 +17,8 @@ const NewsListItem = ({slug, title, description, createdAt, thumb}) => {
                 <h3><Link to={`/aktualnosci/${slug}`}>{title}</Link></h3>
                 <p>{description}</p>
             </div>
-        </NewsListItemContainer>
+        </ArticleContainer>
     )
 }
 
-export default NewsListItem;
+export default Article;
