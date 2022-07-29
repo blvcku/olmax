@@ -43,7 +43,7 @@ export const CarouselSlide = styled.div`
         text-align:start;
         z-index:3;
         padding-inline:1rem;
-        max-width:calc(1300px + 2rem);
+        max-width:1350px;
         width:100%;
         margin-inline:auto;
     }

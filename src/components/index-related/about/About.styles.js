@@ -5,12 +5,12 @@ export const AboutContainer = styled.section`
     overflow:hidden;
     position:relative;
     background:var(--color-white-dark);
-    padding-inline:1rem;
 `;
 
 export const AboutWrapper = styled.div`
-    max-width:1300px;
+    max-width:1350px;
     margin-inline:auto;
+    padding-inline:1rem;
     margin-top:3rem;
     margin-bottom:3rem;
     h2{
@@ -42,7 +42,7 @@ export const AboutWrapper = styled.div`
         background:var(--color-grey-light);
     }
     & > div:nth-child(3){
-        display:none;
+        margin-top:2rem;
         box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
     }
     @media(min-width:290px){
@@ -79,7 +79,7 @@ export const AboutWrapper = styled.div`
             margin-bottom:3rem;
         }
         & > div:nth-child(3){
-            display:block;
+            margin-top:0;
         }
     }
     @media(min-width:1250px){

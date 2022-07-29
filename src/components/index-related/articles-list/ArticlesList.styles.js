@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { TextUnderline } from '../../../styles/Mixins';
 
 export const ArticlesListContainer = styled.section`
-    padding:8rem 0 7rem; ${/* -1rem on bottom because of bottom padding on NewsContainer */''}
+    padding:3rem 0 2rem; ${/* -1rem on bottom because of bottom padding on NewsContainer */''}
     & > h2{
         font-size:var(--fs-xlarge);
         font-weight:700;
@@ -41,6 +41,9 @@ export const ArticlesListContainer = styled.section`
                 overflow:hidden;
             }
         }
+    }
+    @media(min-width:1000px){
+        padding:8rem 0 7rem; ${/* -1rem on bottom because of bottom padding on NewsContainer */''}
     }
 `;
 
