@@ -35,23 +35,18 @@ const Carousel = () => {
                 <CarouselSlide active={currentSlide === 0} background={EarthworkImage}>
                     <div>
                         <h2>Roboty ziemne</h2>
-                        <span></span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aliquid repellendus iure ea. Fugit aspernatur consequuntur assumenda perspiciatis saepe eveniet quia alias modi tenetur optio molestias a dolorum, quibusdam debitis, libero omnis illo. Deserunt voluptatibus dolorum corporis pariatur nemo eius?</p>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor</p>
                     </div>
                 </CarouselSlide>
                 <CarouselSlide active={currentSlide === 1} background={DemolitionImage}>
                     <div>
                         <h2>Wyburzenia</h2>
-                        <span></span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aliquid repellendus iure ea. Fugit aspernatur consequuntur assumenda perspiciatis saepe eveniet quia alias modi tenetur optio molestias a dolorum, quibusdam debitis, libero omnis illo. Deserunt voluptatibus dolorum corporis pariatur nemo eius?</p>
-                    </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor</p>                    </div>
                 </CarouselSlide>
                 <CarouselSlide active={currentSlide === 2} background={MachineRentalImage}>
                     <div>
                         <h2>Wynajem maszyn</h2>
-                        <span></span>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Id aliquid repellendus iure ea. Fugit aspernatur consequuntur assumenda perspiciatis saepe eveniet quia alias modi tenetur optio molestias a dolorum, quibusdam debitis, libero omnis illo. Deserunt voluptatibus dolorum corporis pariatur nemo eius?</p>
-                    </div>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor</p>                    </div>
                 </CarouselSlide>
             </CarouselContainer>
             <CarouselIndicatorsContainer>

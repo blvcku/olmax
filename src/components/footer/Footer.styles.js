@@ -13,6 +13,8 @@ export const FooterContainer = styled.footer`
         transition:color .3s ease;
         svg{
             display:block;
+            width:2rem;
+            height:auto;
         }
         &:hover{
             color:var(--color-orange);

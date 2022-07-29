@@ -1,4 +1,5 @@
 import styled from "styled-components";
+import { TextUnderline } from '../../../../styles/Mixins';
 
 export const CarouselContainer = styled.div`
     position:absolute;
@@ -30,71 +31,43 @@ export const CarouselSlide = styled.div`
         background:rgba(0, 0, 0, 0.5);
     }
     &::after{
-        background:rgba(0,0,0, 0.25);
+        background:rgba(0,0,0, 0.3);
         transform:translateX(-100%);
-        transition:transform .7s ease .6s;
+        transition:transform .7s ease .4s;
     }
     div{
         grid-area: 1 / 1 / 2 / 2;
         display:flex;
         flex-direction:column;
-        align-items:center;
         justify-content:center;
         text-align:start;
         z-index:3;
         padding-inline:1rem;
-        @media(min-width:450px){
-            text-align:center;
-        }
+        max-width:calc(1300px + 2rem);
+        width:100%;
+        margin-inline:auto;
     }
     h2{
         color:var(--color-white);
         font-weight:500;
-        font-size:var(--fs-large);
-        margin-bottom:.5rem;
-        transform:translateY(1rem);
-        opacity:0;
+        font-size:var(--fs-xlarge);
         width:100%;
+        ${TextUnderline}
     }
     p{
         color:var(--color-grey-light);
         font-weight:400;
         font-size:var(--fs-medium);
-        max-width:55ch;
-        margin-top:.5rem;
+        max-width:45ch;
+        margin-top:.9rem;
         margin-bottom:3rem;
-        transform:translateY(-1rem);
-        opacity:0;
-        line-height:1.15;
-    }
-    span{
-        background:var(--color-orange);
-        height:2px;
-        max-width:40ch;
-        width:100%;
-        transform:scaleX(0);
+        line-height:1.2;
     }
     ${({active}) => active && `
         &::after{
             transform:translateX(0);
         }
-        span{
-            animation: line-appear .5s ease forwards 1s;
-        }
-        h2{
-            animation: text-appear .5s ease forwards 1.5s;
-        }
-        p{
-            animation: text-appear .5s ease forwards 1.5s;
-        }
     `}
-
-    @keyframes text-appear{
-        to{transform:translateY(0); opacity:1;}
-    }
-    @keyframes line-appear{
-        to{transform:scaleX(1);}
-    }
 `;
 
 export const CarouselIndicatorsContainer = styled.ol`
