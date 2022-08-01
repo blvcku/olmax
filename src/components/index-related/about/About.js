@@ -3,9 +3,9 @@ import { StaticImage } from "gatsby-plugin-image";
 import Button from "../../utils/Button";
 import { AboutContainer, AboutWrapper } from "./About.styles";
 
-const About = ({innerRef}) => {
+const About = () => {
     return(
-        <AboutContainer ref={innerRef}>
+        <AboutContainer>
             <AboutWrapper>
                 <div>
                     <h2>Nasza firma</h2>

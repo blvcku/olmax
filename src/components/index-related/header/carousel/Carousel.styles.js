@@ -8,7 +8,6 @@ export const CarouselContainer = styled.div`
     left:0;
     top:0;
     display:flex;
-    z-index:-1;
     transform: translateX(${({currentSlide}) => `${currentSlide * (-100)}%`});
     transition:transform .8s cubic-bezier(0.65,0.05,0.36,1);;
 `;
@@ -16,7 +15,7 @@ export const CarouselContainer = styled.div`
 export const CarouselSlide = styled.div`
     background-image:url('${({background}) => background}');
     background-size:cover;
-    background-attachment:fixed;
+    background-attachment: fixed;
     background-position:center center;
     width:100%;
     height:100%;

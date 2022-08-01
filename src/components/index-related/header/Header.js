@@ -2,9 +2,9 @@ import React from 'react';
 import Carousel from './carousel/Carousel';
 import { HeaderContainer } from './Header.styles';
 
-const Header = ({innerRef}) => {
+const Header = () => {
     return(
-        <HeaderContainer ref={innerRef}>
+        <HeaderContainer>
             <Carousel />
         </HeaderContainer>
     )

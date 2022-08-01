@@ -1,7 +1,5 @@
-import React, { useLayoutEffect, useRef } from "react";
+import React from "react";
 import { graphql } from "gatsby";
-import { gsap } from 'gsap';
-import { ScrollTrigger } from "gsap/all";
 import CustomHelmet from "../components/CustomHelmet";
 import Header from "../components/index-related/header/Header";
 import About from "../components/index-related/about/About";
@@ -15,27 +13,12 @@ const Index = ({data}) => {
 
 	const { allContentfulArticles: { articlesList } } = data;
 
-	//gsap stuff
-	const headerRef = useRef();
-	const aboutRef = useRef();
-	// useLayoutEffect(() => {
-	// 	gsap.registerPlugin(ScrollTrigger);
-	// 	ScrollTrigger.create({
-	// 		trigger: headerRef.current,
-	// 		start: 'top top',
-	// 		pin: true,
-	// 		pinSpacing: false,
-	// 	})
-	// }, []);
-
-
-
   	return(
 		<>
 			<CustomHelmet />
-			<Header innerRef={headerRef} />
+			<Header />
 			<main>
-				<About innerRef={aboutRef}/>
+				<About />
 				<OurServices />
 				<ArticlesList articlesList={articlesList} />
 				<Questions />

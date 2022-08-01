@@ -16,7 +16,6 @@ On the site we can find:
 Project is created with:
 * Gatsby
 * GraphQL
-* GSAP
 * Formspree
 * Contentful
 
@@ -25,7 +24,6 @@ Project is created with:
   * Basic informations about company and their services
   * Contact form connected to formspree, which sends emails with form data to company owner
   * List of news using data from contentful
-  * Scroll animations using gsap(in progress)
 * Automatically generated news pages using data from contentful(in progress)
 * Privacy policy page(in progress)
 
