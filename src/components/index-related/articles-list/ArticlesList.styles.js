@@ -52,7 +52,7 @@ export const ArticlesListWrapper = styled.ul`
     --gap: 2.6rem;
     --visible-columns:1;
     transition:transform .3s cubic-bezier(0.65,0.05,0.36,1);;
-    margin-top:3rem; ${/* +1rem from padding top */''}
+    margin-top:1rem; ${/* +1rem from padding top */''}
     padding:1rem 0; ${/* padding to make sure that box shadow is visible on list items */''}
     display:grid;
     grid-auto-flow:column;
@@ -63,8 +63,9 @@ export const ArticlesListWrapper = styled.ul`
         overflow:visible;
         transform:translateX(${({currentVisibleArticle}) => `calc(${currentVisibleArticle} / var(--visible-columns) * 100% * -1)`});
     }
-    @media(min-width:950px){
+    @media(min-width:1000px){
         --visible-columns:3;
+        margin-top:3rem; ${/* +1rem from padding top */''}
     }
 `;
 

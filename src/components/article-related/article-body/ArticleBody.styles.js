@@ -7,7 +7,7 @@ export const ArticleBodyContainer = styled.section`
 
 export const ArticleBodyWrapper = styled.div`
     --elementShift: -4rem;
-    padding: 1.5rem 1rem;
+    padding: 1.5rem 1rem 3rem 1rem;
     max-width:1350px;
     background:var(--color-white);
     margin-inline:auto;
@@ -16,6 +16,9 @@ export const ArticleBodyWrapper = styled.div`
     @media(min-width:700px){
         --elementShift: -6rem;
         padding: 3rem 2.5rem;
+    }
+    @media(min-width:1000px){
+        padding: 3rem 2.5rem 7rem 2.5rem;
     }
 `;
 

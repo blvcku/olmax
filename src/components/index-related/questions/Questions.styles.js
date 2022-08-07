@@ -31,7 +31,7 @@ export const QuestionsContainer = styled.section`
 
 export const QuestionsList = styled.ul`
     margin-inline:auto;
-    margin-top:4rem;
+    margin-top:2rem;
     max-width:500px;
     display:grid;
     gap:2rem;
@@ -89,5 +89,8 @@ export const QuestionsList = styled.ul`
                 }
             }
         }
+    }
+    @media(min-width:1000px){
+        margin-top:4rem;
     }
 `;
