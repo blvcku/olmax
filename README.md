@@ -25,11 +25,11 @@ Project is created with:
   * Basic informations about company and their services
   * Contact form connected to formspree, which sends emails with form data to company owner
   * List of news using data from contentful
-* Automatically generated news pages using data from contentful(in progress)
+* Automatically generated articles pages using data from contentful
 * Privacy policy page(in progress)
 
 ## Data models
-News article:
+Article:
 ```
 {
   "name": "aktualności",
