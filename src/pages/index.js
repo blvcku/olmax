@@ -41,7 +41,7 @@ export const query = graphql`
 				description
 				thumb {
 					gatsbyImageData(
-						placeholder: BLURRED
+						placeholder: DOMINANT_COLOR
 						width:600
 					)
 					description

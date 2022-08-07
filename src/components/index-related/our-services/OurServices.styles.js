@@ -2,13 +2,13 @@ import styled from "styled-components";
 import { TextUnderline } from '../../../styles/Mixins';
 
 export const OurServicesContainer = styled.section`
-    padding:3rem 1rem;
     background:var(--color-white);
     & > ul{
         display:grid;
         gap:3rem;
         max-width:1500px;
         margin-inline:auto;
+        padding:3rem 1rem;
     }
     @media(min-width:730px){
         & > ul{
@@ -17,7 +17,9 @@ export const OurServicesContainer = styled.section`
         }
     }
     @media(min-width:1180px){
-        padding:8rem 1rem;
+        & > ul{
+            padding:8rem 1rem;
+        }
     }
 `;
 

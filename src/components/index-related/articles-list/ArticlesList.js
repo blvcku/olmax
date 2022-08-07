@@ -37,7 +37,7 @@ const ArticlesList = ({articlesList}) => {
                 <div>
                     <ArticlesListWrapper currentVisibleArticle={currentVisibleArticle} >
                         {articlesList.map(data => (
-                            <Article {...data} />
+                            <Article key={data.title} {...data} />
                         ))}
                     </ArticlesListWrapper>
                 </div>

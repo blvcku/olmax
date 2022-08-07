@@ -22,6 +22,7 @@ export const QuestionsContainer = styled.section`
         text-align:center;
         max-width:50ch;
         margin-inline:auto;
+        line-height:1.33;
     }
     @media(min-width:1000px){
         padding:8rem 1rem;

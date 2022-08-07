@@ -21,6 +21,7 @@ export const ArticlesListContainer = styled.section`
         max-width:50ch;
         margin-top:.9rem;
         margin-inline:auto;
+        line-height:1.33;
     }
     & > div{
         position:relative;
@@ -68,7 +69,7 @@ export const ArticlesListWrapper = styled.ul`
 `;
 
 export const ArticleContainer = styled.li`
-box-shadow: 0px 2px 4px #00000066;
+    box-shadow: 0px 2px 4px #00000066;
     margin-inline:calc(var(--gap) / 2);
     background:var(--color-white);
     height:max-content;

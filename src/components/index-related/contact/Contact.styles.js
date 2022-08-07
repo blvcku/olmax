@@ -2,9 +2,8 @@ import styled from "styled-components";
 import { TextUnderline } from '../../../styles/Mixins';
 
 export const ContactContainer = styled.section`
-    --padding-inline:1rem;
-    padding:3rem var(--padding-inline);
-    max-width:calc(1300px + 2 * var(--padding-inline));
+    padding:3rem 1rem;
+    max-width:1350px;
     margin-inline:auto;
     & > div{
         margin-bottom:1.5rem;
@@ -64,7 +63,7 @@ export const ContactContainer = styled.section`
         }
     }
     @media(min-width:1080px){
-        padding:9rem var(--padding-inline);
+        padding:9rem 1rem;
     }
 `;
 

@@ -19,7 +19,7 @@ const GlobalStyle = createGlobalStyle`
         --fs-large:2.2rem;
         --fs-xlarge:2.6rem;
 
-        font-family: 'Red Hat Display', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size:100%;
         color:var(--color-grey-dark);
 
@@ -32,7 +32,7 @@ const GlobalStyle = createGlobalStyle`
         margin:0;
         padding:0;
         box-sizing: border-box;
-        font-family: 'Red Hat Display', sans-serif;
+        font-family: 'Poppins', sans-serif;
         font-size:100%;
         line-height:1;
     }
