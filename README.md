@@ -15,6 +15,7 @@ On the site we can find:
 ## Technologies
 Project is created with:
 * Gatsby
+* Styled Components
 * GraphQL
 * Formspree
 * Contentful
