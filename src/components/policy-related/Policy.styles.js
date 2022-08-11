@@ -51,7 +51,7 @@ export const PolicyContainer = styled.article`
     }
     ul{
         list-style:disc;
-        padding-left:2rem;
+        padding-left:2.5rem;
         margin-bottom:calc(2 * var(--gap));
         li{
             font-size:var(-fs-medium);

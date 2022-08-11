@@ -37,7 +37,7 @@ export const QuestionsList = styled.ul`
     gap:2rem;
     li{
         border-bottom:2px solid var(--color-grey-light);
-        padding-bottom:1.8rem;
+        padding-bottom:1.5rem;
     }
     details{
         --line-width:.9rem;

@@ -49,6 +49,16 @@ export const OurServicesListItem = styled.li`
         max-width:40ch;
         line-height:1.33;
     }
+    p + p{
+        margin-top:.1rem;
+    }
+    ul{
+        list-style:disc;
+        margin-top:.2rem;
+        margin-inline:auto;
+        width:max-content;
+        text-align:start;
+    }
     @media(min-width:1180px){
         gap:1.5rem;
         flex-direction:row;
@@ -59,6 +69,11 @@ export const OurServicesListItem = styled.li`
                 left:0;
                 transform:none;
             }
+        }
+        ul{
+            padding-left:1.5rem;
+            margin-inline:0;
+            width:auto;
         }
     }
 `;

@@ -57,7 +57,7 @@ export const CarouselSlide = styled.div`
         color:var(--color-grey-light);
         font-weight:400;
         font-size:var(--fs-medium);
-        max-width:45ch;
+        max-width:55ch;
         margin-top:.9rem;
         margin-bottom:3rem;
         line-height:1.2;

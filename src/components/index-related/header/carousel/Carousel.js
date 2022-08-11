@@ -35,18 +35,20 @@ const Carousel = () => {
                 <CarouselSlide active={currentSlide === 0} background={EarthworkImage}>
                     <div>
                         <h2>Roboty ziemne</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor</p>
+                        <p>Wykonujemy wszelakiego rodzaju roboty ziemne. Nasza oferta obejmuje - wykopy, utwardzenie terenu, budowy sieci kanalizacyjnych, wodnych, przyłacza prądowe, korytowanie, nasypy. Zapewniamy wywóz odpadów ziemi, gruzu i inne.</p>
                     </div>
                 </CarouselSlide>
                 <CarouselSlide active={currentSlide === 1} background={DemolitionImage}>
                     <div>
                         <h2>Wyburzenia</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor</p>                    </div>
+                        <p>Specjalizujemy sie w wyburzeniach obiektów użytku publicznego, hale, magazyny i wiele wiele innych. Wykorzystujemy specjalistyczny sprzęt wyburzeniowy wyposażony w młoty wyburzeniowe, nożyce kruszące, zapewniamy wywóz oraz utylizacje pozostałości porozbiórkowych.</p>
+                    </div>
                 </CarouselSlide>
                 <CarouselSlide active={currentSlide === 2} background={MachineRentalImage}>
                     <div>
                         <h2>Wynajem maszyn</h2>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Lorem ipsum dolor</p>                    </div>
+                        <p>Prowadzimy wynajem maszyn bez operatora typu: zagęszczarki, wozidła budowalne, skoczki, i wiele innych maszyn budowlanych.</p>
+                    </div>
                 </CarouselSlide>
             </CarouselContainer>
             <CarouselIndicatorsContainer>

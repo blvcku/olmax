@@ -9,32 +9,26 @@ const Questions = () => {
             <QuestionsList>
                 <li>
                     <details>
-                        <summary>Ile kosztują wasze usługi?</summary>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia cum voluptatum recusandae dolor aliquid blanditiis doloribus excepturi minima? Cum commodi, optio, animi dolorum, doloribus dicta velit quasi voluptas architecto ex itaque quos. Voluptas, eum!</p>
+                        <summary>Gdzie znajduje się nasza siedziba?</summary>
+                        <p>- Hallera 9 Częstochowa.</p>
                     </details>
                 </li>
                 <li>
                     <details>
-                        <summary>Ile kosztują wasze usługi?</summary>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia cum voluptatum recusandae dolor aliquid blanditiis doloribus excepturi minima? Cum commodi, optio, animi dolorum, doloribus dicta velit quasi voluptas architecto ex itaque quos. Voluptas, eum!</p>
+                        <summary>Jakie są ceny naszych usług?</summary>
+                        <p>- Po wszelkie informacje cenowe zapraszam do kontaktu telefonicznego.</p>
                     </details>
                 </li>
                 <li>
                     <details>
-                        <summary>Ile kosztują wasze usługi?</summary>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia cum voluptatum recusandae dolor aliquid blanditiis doloribus excepturi minima? Cum commodi, optio, animi dolorum, doloribus dicta velit quasi voluptas architecto ex itaque quos. Voluptas, eum!</p>
+                        <summary>Czy świadczymy usługi na terenie całego kraju?</summary>
+                        <p>- Świadczymy usługi na terenie całej Polski.</p>
                     </details>
                 </li>
                 <li>
                     <details>
-                        <summary>Ile kosztują wasze usługi?</summary>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia cum voluptatum recusandae dolor aliquid blanditiis doloribus excepturi minima? Cum commodi, optio, animi dolorum, doloribus dicta velit quasi voluptas architecto ex itaque quos. Voluptas, eum!</p>
-                    </details>
-                </li>
-                <li>
-                    <details>
-                        <summary>Ile kosztują wasze usługi?</summary>
-                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Maxime mollitia cum voluptatum recusandae dolor aliquid blanditiis doloribus excepturi minima? Cum commodi, optio, animi dolorum, doloribus dicta velit quasi voluptas architecto ex itaque quos. Voluptas, eum!</p>
+                        <summary>Czy wynajmujemy maszyny bez operatora? </summary>
+                        <p>Wszystkie maszyny przeznaczone na wynajem mogą zostać wynajęte bez operatora.</p>
                     </details>
                 </li>
             </QuestionsList>
