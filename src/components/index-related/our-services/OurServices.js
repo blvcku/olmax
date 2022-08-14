@@ -26,13 +26,7 @@ const OurServices = () => {
                     <img src={MachineRentalIcon} alt='' />
                     <div>
                         <h2>Wynajem maszyn</h2>
-                        <p>Prowadzimy wynajem maszyn bez operatora, po wszelkie informacje cenowe zapraszamy do kontaktu.</p>
-                        <p>Maszyny przeznaczone przez nas na wynajem to:</p>
-                        <ul>
-                            <li>zagęszczarki</li>
-                            <li>wozidła budowlane skoczki</li>
-                            <li>i wiele innych maszyn budowlanych</li>
-                        </ul>
+                        <p>Prowadzimy wynajem maszyn bez operatora, maszyny oferowane na wynajem przez naszą firmę to: zagęszczarki, wozidła budowlane skoczki, i wiele innych maszyn budowlanych. Po więcej informacji na temat wynajmu maszyn oraz cen wynajmu maszyn zapraszamy do kontaktu!</p>
                     </div>
                 </OurServicesListItem>
             </ul>

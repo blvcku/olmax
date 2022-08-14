@@ -24,7 +24,7 @@ export const QuestionsContainer = styled.section`
         margin-inline:auto;
         line-height:1.33;
     }
-    @media(min-width:1000px){
+    @media(min-width:730px){
         padding:8rem 1rem;
     }
 `;

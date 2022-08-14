@@ -16,9 +16,9 @@ export const OurServicesContainer = styled.section`
             grid-template-columns:repeat(3,1fr);
         }
     }
-    @media(min-width:1180px){
+    @media(min-width:730px){
         & > ul{
-            padding:8rem 1rem;
+            padding:7rem 1rem;
         }
     }
 `;
@@ -46,18 +46,8 @@ export const OurServicesListItem = styled.li`
     p{
         margin-top:.7rem;
         font-size:var(--fs-small);
-        max-width:40ch;
+        max-width:50ch;
         line-height:1.33;
-    }
-    p + p{
-        margin-top:.1rem;
-    }
-    ul{
-        list-style:disc;
-        margin-top:.2rem;
-        margin-inline:auto;
-        width:max-content;
-        text-align:start;
     }
     @media(min-width:1180px){
         gap:1.5rem;
@@ -69,11 +59,6 @@ export const OurServicesListItem = styled.li`
                 left:0;
                 transform:none;
             }
-        }
-        ul{
-            padding-left:1.5rem;
-            margin-inline:0;
-            width:auto;
         }
     }
 `;

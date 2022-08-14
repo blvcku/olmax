@@ -3,6 +3,7 @@ import { graphql } from "gatsby";
 import CustomHelmet from "../components/CustomHelmet";
 import Header from "../components/index-related/header/Header";
 import About from "../components/index-related/about/About";
+import HeroSection from "../components/index-related/hero-section/HeroSection";
 import OurServices from "../components/index-related/our-services/OurServices";
 import ArticlesList from '../components/index-related/articles-list/ArticlesList';
 import Questions from "../components/index-related/questions/Questions";
@@ -19,6 +20,7 @@ const Index = ({data}) => {
 			<Header />
 			<main>
 				<About />
+				<HeroSection />
 				<OurServices />
 				<ArticlesList articlesList={articlesList} />
 				<Questions />

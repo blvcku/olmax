@@ -27,10 +27,10 @@ export const CarouselSlide = styled.div`
         grid-area: 1 / 1 / 2 / 2;
     }
     &::before{
-        background:rgba(0, 0, 0, 0.5);
+        background:rgba(0, 0, 0, 0.6);
     }
     &::after{
-        background:rgba(0,0,0, 0.3);
+        background:rgba(0,0,0, 0.35);
         transform:translateX(-100%);
         transition:transform .7s ease .4s;
     }
