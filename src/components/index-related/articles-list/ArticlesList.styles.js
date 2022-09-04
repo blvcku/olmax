@@ -142,6 +142,9 @@ export const NextButton = styled.button`
     @media(hover: hover) and (pointer:fine){
         opacity:0;
     }
+    &:disabled{
+        display:none;
+    }
 `;
 
 export const PrevButton = styled(NextButton)`

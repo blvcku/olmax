@@ -28,10 +28,10 @@ const ArticlesList = ({articlesList}) => {
             <h2>Aktualności</h2>
             <p>Zobacz najnowsze działania naszej firmy!</p>
             <div>
-                <NextButton onClick={increaseCurrentNews} type='button'>
+                <NextButton disabled={articlesList.length < (width <= 950 ? 3 : 4)} onClick={increaseCurrentNews} type='button'>
                     <img src={ArrowIcon} alt='Następna aktualność' />
                 </NextButton>
-                <PrevButton onClick={decreaseCurrentNews} type='button'>
+                <PrevButton disabled={articlesList.length < (width <= 950 ? 3 : 4)} onClick={decreaseCurrentNews} type='button'>
                     <img src={ArrowIcon} alt='Poprzednia aktualność' />
                 </PrevButton>
                 <div>
