@@ -1,6 +1,8 @@
 # OLMAX
 Business site created for company named OLMAX.
 
+[Live website](https://www.ol-max.pl)
+
 On the site we can find: 
 * Basic informations about company and their services
 * Latest company news
