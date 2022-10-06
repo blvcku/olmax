@@ -47,7 +47,7 @@ const Carousel = () => {
                 <CarouselSlide active={currentSlide === 2} background={MachineRentalImage}>
                     <div>
                         <h2>Wynajem maszyn</h2>
-                        <p>Prowadzimy wynajem maszyn bez operatora typu: zagęszczarki, wozidła budowalne, skoczki, i wiele innych maszyn budowlanych.</p>
+                        <p>Prowadzimy wynajem maszyn i urządzeń budowlanych bez operatora.</p>
                     </div>
                 </CarouselSlide>
             </CarouselContainer>
