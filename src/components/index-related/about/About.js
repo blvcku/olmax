@@ -8,9 +8,16 @@ const About = () => {
         <AboutContainer>
             <AboutWrapper>
                 <div>
-                    <h2>Nasza firma</h2>
-                    <p>Firma Olmax Damian Strączyński z siedzibą w miejscowości Częstochowa świadczy swoje usługi w branży robót ziemnych, wynajmu sprzętu budowlanego.</p>
-                    <p>Profil naszej działalnosci obejmuje głownie prace związane z wyburzeniami, transportem, kompleksowymi robotami ziemnymi, wszelakiego rodzaju wykopami. Obecnie nasza firma posiada szeroki wachlarz sprzętu budowalnego, dzięki któremu, żadna usługa dla nas nie jest straszna.</p>
+                    <h2>O nas</h2>
+                    <p>Firma OLMAX DAMIAN STRĄCZYŃSKI mieści się w&nbsp;Częstochowie. </p>
+                    <p>Profil naszej działalności obejmuje głównie prace związane z&nbsp;kompleksowymi
+                        robotami ziemnymi, wyburzeniami i&nbsp;transportem.</p>
+                    <p>Posiadamy kilkuletnie doświadczenie, które pozwala Nam prężnie rozwijać się
+                    w tej branży.</p>
+                    <p>Najwyższym priorytetem jest zadowolenie naszych klientów. Dlatego do
+                    każdego zadania podchodzimy indywidualnie, aby&nbsp;zapewnić wysoką jakość
+                    usług.</p>
+                 
                     <Button to='/#aktualnosci'>Sprawdź nasze aktualności</Button>
                 </div>
                 <span></span>

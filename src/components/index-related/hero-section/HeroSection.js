@@ -6,7 +6,14 @@ const HeroSection = () => {
         <HeroSectionContainer>
             <div>
                 <h2>Skup zbiorników mauzer</h2>
-                <p>Nasza firma chętnie nawiąże współpracę na odbiór/zakup zbiorników mauzer 600L, 800L, 1000L, oraz beczek plastikowych, metalowych. Zbiorniki muszą być bez zawartości, nie uszkodzone, kompletne na podstawie metalowej, plastikowej, drewnianej. Cena zależy od stanu zbiorników, rodzaju palety oraz substancji która była wewnątrz. Posiadamy także duże ilość na sprzedaż, po więcej informacji zapraszam do kontaktu. Obsługujemy duże, małe firmy jak i prywatne osoby.</p>
+                <p>Nasza firma chętnie nawiąże współpracę na odbiór/zakup zbiorników mauzer o
+                pojemności 600L/800L/1000L lub beczek plastikowych/metalowych. Zbiorniki
+                muszą być kompletne, nieuszkodzone, bez zawartości żadnych substancji, na
+                podstawie metalowej/plastikowej/drewnianej. Cena ustalana jest
+                indywidualnie, w zależności od wyżej wymienionych parametrów.
+                Posiadamy również takowe zbiorniki na sprzedaż, w liczbie hurtowej dla firm
+                lub pojedynczej dla osób prywatnych.
+                </p>
             </div>
         </HeroSectionContainer>
     )

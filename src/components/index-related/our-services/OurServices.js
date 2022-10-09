@@ -12,23 +12,27 @@ const OurServices = () => {
                     <img src={EarthworkIcon} alt='' />
                     <div>
                         <h2>Roboty ziemne</h2>
-                        <p>Wykonujemy szeroki wachlarz robót ziemnych. W sposób solidny realizujemy powierzone nam zadania. Nasza oferta obejmuje: wykopy, przyłącza, wyburzenie obiektów, drogi dojazdowe, utwardzenie teren, budowy sieci wodno-kanalizacyjnych oraz inne usługi do których możemy wykorzystać nasz sprzęt.</p>
+                        <p>W solidny sposób realizujemy powierzone Nam zadania. Nasza oferta obejmuje: wykopy,
+                        przyłącza, wyburzenia obiektów, drogi dojazdowe, utwardzenia terenu, budowy sieci
+                        wodno-kanalizacyjnych oraz inne usługi, do&nbsp;których możemy wykorzystać Nasz sprzęt.</p>
                     </div>
                 </OurServicesListItem>
                 <OurServicesListItem>
                     <img src={DemolitionIcon} alt='' />
                     <div>
                         <h2>Wyburzenia</h2>
-                        <p>Specjalizujemy się w wyburzeniach obiektów użytku publicznego, hale, magazyny, itp. Wykorzystujemy specjalistyczny sprzęt wyburzeniowy wyposażony w młoty wyburzeniowe, nożyce kruszące, zapewniemay wywóz pozostałości porozbiórkowych.
-                        </p>
+                        <p>Specjalizujemy się w&nbsp;rożnego typu wyburzeniach. Wykorzystujemy do&nbsp;tego sprzęt
+                           wyburzeniowy, wyposażony w&nbsp;specjalistyczny osprzęt. Zapewniamy wywóz pozostałości
+                           porozbiórkowych i&nbsp;uprzątnięcia terenu.
+                       </p>
                     </div>
                 </OurServicesListItem>
                 <OurServicesListItem>
                     <img src={MachineRentalIcon} alt='' />
                     <div>
                         <h2>Wynajem maszyn</h2>
-                        <p>Prowadzimy wynajem maszyn i urządzeń budowlanych bez operatora. 
-                        Po więcej informacji na temat dostępności oraz cen zapraszamy do kontaktu.</p>
+                        <p>Oferujemy wynajem maszyn bez operatora, indywidualnie dopasowany do&nbsp;aktualnych
+                        potrzeb Naszego klienta. </p>
                     </div>
                 </OurServicesListItem>
             </ul>

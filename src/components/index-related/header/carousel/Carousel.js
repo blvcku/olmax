@@ -35,19 +35,27 @@ const Carousel = () => {
                 <CarouselSlide active={currentSlide === 0} background={EarthworkImage}>
                     <div>
                         <h2>Roboty ziemne</h2>
-                        <p>Wykonujemy wszelakiego rodzaju roboty ziemne. Nasza oferta obejmuje - wykopy, utwardzenie terenu, budowy sieci kanalizacyjnych, wodnych, przyłacza prądowe, korytowanie, nasypy. Zapewniamy wywóz odpadów ziemi, gruzu i inne.</p>
+                        <p>Nasza oferta obejmuje szeroki zakres prac ziemnych: wykopy, utwardzenia,
+                           korytowania, odwierty wiertnicą, budowy sieci wodno-kanalizacyjnej, przyłącza
+                           prądowe.
+                           Zapewniamy wywóz ziemi, gruzu oraz odpadów budowlanych.</p>
                     </div>
                 </CarouselSlide>
                 <CarouselSlide active={currentSlide === 1} background={DemolitionImage}>
                     <div>
                         <h2>Wyburzenia</h2>
-                        <p>Specjalizujemy sie w wyburzeniach obiektów użytku publicznego, hale, magazyny i wiele wiele innych. Wykorzystujemy specjalistyczny sprzęt wyburzeniowy wyposażony w młoty wyburzeniowe, nożyce kruszące, zapewniamy wywóz oraz utylizacje pozostałości porozbiórkowych.</p>
+                        <p>Specjalizujemy się w wyburzeniach hal, magazynów, budynków użytku
+                           publicznego. Wykorzystujemy specjalistyczny sprzęt wyburzeniowy, który jest
+                           wyposażony w młoty wyburzeniowe/nożyce kruszące. Zapewniamy wywóz
+                           oraz utylizacje pozostałości porozbiórkowych.</p>
                     </div>
                 </CarouselSlide>
                 <CarouselSlide active={currentSlide === 2} background={MachineRentalImage}>
                     <div>
                         <h2>Wynajem maszyn</h2>
-                        <p>Prowadzimy wynajem maszyn i urządzeń budowlanych bez operatora.</p>
+                        <p>Oferujemy wynajem maszyn i urządzeń budowlanych. W zależności od potrzeb
+                           indywidualnych.
+                        </p>
                     </div>
                 </CarouselSlide>
             </CarouselContainer>

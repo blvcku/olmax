@@ -10,27 +10,17 @@ const Questions = () => {
                 <li>
                     <details>
                         <summary>Gdzie znajduje się nasza siedziba?</summary>
-                        <p>- Hallera 9 Częstochowa.</p>
-                    </details>
-                </li>
-                <li>
-                    <details>
-                        <summary>Jakie są ceny naszych usług?</summary>
-                        <p>- Po wszelkie informacje cenowe zapraszam do kontaktu telefonicznego.</p>
+                        <p>- Siedziba firmy znajduje się przy ul.&nbsp;Hallera&nbsp;9 w Częstochowie.
+                        </p>
                     </details>
                 </li>
                 <li>
                     <details>
                         <summary>Czy świadczymy usługi na terenie całego kraju?</summary>
-                        <p>- Świadczymy usługi na terenie całej Polski.</p>
+                        <p>- Tak, świadczymy usługi na terenie całej Polski.</p>
                     </details>
                 </li>
-                <li>
-                    <details>
-                        <summary>Czy wynajmujemy maszyny bez operatora? </summary>
-                        <p>Wszystkie maszyny przeznaczone na wynajem mogą zostać wynajęte bez operatora.</p>
-                    </details>
-                </li>
+              
             </QuestionsList>
         </QuestionsContainer>
     )
